@@ -84,15 +84,10 @@ function createCatMarkup({ breeds, url }) {
 }
 
 function createMarkup(breeds) {
-    return (
-        placeholderText + breeds.map(breed => createOptionMarkup(breed)).join('')
-    );
+    return (`<option data-placeholder="true"></option>` +
+        breeds.map(breed => createOptionMarkup(breed)).join(''));
 }
 
 function createOptionMarkup({ id, name }) {
     return `<option value="${id}">${name}</option>`;
-}
-
-function placeholderText() {
-    return `<option data-placeholder="true"></option>`;
 }
