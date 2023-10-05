@@ -1,0 +1,78 @@
+body {
+  background-image: url('../images/cat-bg.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.is-hidden {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.breed-select {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  width: 250px;
+  color: #fafafa;
+  background-color: #202020;
+}
+
+.ss-content .ss-list .ss-option {
+  color: #fafafa;
+}
+
+.ss-content .ss-list .ss-option:hover,
+.ss-content .ss-list .ss-option:focus,
+.ss-content .ss-list .ss-option.ss-highlighted,
+.ss-content .ss-list .ss-option:not(.ss-disabled).ss-selected {
+  color: #202020;
+  background-color: #fafafa;
+}
+
+.cat-info {
+  margin: 50px 50px 50px 100px;
+  padding: 30px;
+  border: 2px solid #fafafa;
+  max-width: 400px;
+  background-color: #202020a2;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.cat-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.cat-description span,
+.cat-temperament span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.loader {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 20px;
+  border-radius: 24px;
+  box-shadow: inset 0 0 30px -10px rgba(255, 255, 255, 0.628);
+  background: linear-gradient(#6df704 150px, transparent 0) no-repeat;
+  animation: custom 1000ms infinite linear;
+}
+
+@keyframes custom {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 250px 0;
+  }
+}
